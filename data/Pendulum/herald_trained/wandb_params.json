@@ -1,0 +1,11 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "{algorithm}-no-interruption",
+    "group": "AAMAS-Pend-herald-VDSAC",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "tags": ["test"],
+    "save_code": "True",
+    "model_logging": "True"
+}

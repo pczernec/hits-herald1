@@ -1,0 +1,13 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "hits",
+    "group": "AAMAS-initial-Platforms",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "tags": [
+      "test"
+    ],
+    "model_logging": "True"
+}

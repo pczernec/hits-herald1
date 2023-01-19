@@ -1,0 +1,10 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "herald",
+    "group": "AAMAS-q-noisy-platforms",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "model_logging": "True"
+}

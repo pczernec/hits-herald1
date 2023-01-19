@@ -1,0 +1,13 @@
+matplotlib
+scipy
+tianshou==0.3.1
+wandb
+optuna
+optuna-dashboard
+pyglet==1.5.27
+tensorflow
+torch
+-e ./hac_envs
+-e ./dynamic-rl-benchmarks
+-e ./graph_rl
+-e ./reacting-rl-envs

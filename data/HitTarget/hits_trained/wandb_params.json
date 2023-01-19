@@ -1,0 +1,13 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "hits-no{env_kwargs.num_obstacles}-vr{env_kwargs.view_range}-s{env_kwargs.speed}",
+    "group": "HitTarget-hits",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "tags": [
+      "test"
+    ],
+    "model_logging": "True"
+}

@@ -1,0 +1,11 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "{algorithm}",
+    "group": "mb-easy-platforms",
+    "sync_tensorboard": "True",
+    "monitor_gym": "True",
+    "tags": ["test"],
+    "save_code": "True",
+    "model_logging": "True"
+}

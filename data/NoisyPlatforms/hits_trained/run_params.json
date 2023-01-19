@@ -1,0 +1,20 @@
+{
+    "n_steps": 10001,
+    "max_runtime": 60000.0,
+    "test_frequency": 40,
+    "n_test_episodes": 20,
+    "env": "NoisyPlatforms-v1",
+    "env_kwargs": {
+        "use_freeze": [true, true]
+    },
+    "worker_class": "DefaultGraphRLWorker",
+    "run_metric_params": {
+        "name": "average_success_run_metric",
+        "after_step": 10000.0
+    },
+    "torch_num_threads": 16,
+    "model_save_frequency": 10000,
+    "success_reward": 0.0,
+    "seed": 1,
+    "tensorboard_log": true
+}

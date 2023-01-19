@@ -1,0 +1,13 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "herald",
+    "group": "AAMAS-ND-updated-herald-VDSAC",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "tags": [
+      "herald", "noisy-drawbridge"
+    ],
+    "model_logging": "True"
+}

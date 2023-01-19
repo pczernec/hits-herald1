@@ -1,0 +1,13 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "{algorithm}",
+    "group": "AAMAS-q-ant",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "tags": [
+      "aamas"
+    ],
+    "model_logging": "True"
+}

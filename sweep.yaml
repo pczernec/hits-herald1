@@ -1,0 +1,23 @@
+program: scripts.run.train
+entity: piotrczernecki
+project: herald-hits
+method: grid
+parameters:
+  env:
+    values:
+      - NoisyPlatforms
+  algo:
+    values:
+      - hits
+      - herald
+  run_params:
+    values:
+      - "env_kwargs={\"use_freeze\": [true, false]}"
+      - "env_kwargs={\"use_freeze\": [true, true]}"
+      - "env_kwargs={\"use_freeze\": [false, true]}"
+command:
+- python
+- "-m"
+- ${program}
+- ${args}
+

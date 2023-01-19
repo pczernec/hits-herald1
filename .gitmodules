@@ -1,0 +1,3 @@
+[submodule "reacting-rl-envs"]
+	path = reacting-rl-envs
+	url = https://github.com/lychanl/reacting-rl-envs

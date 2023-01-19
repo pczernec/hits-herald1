@@ -1,0 +1,13 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "seed-{seed}",
+    "group": "AAMAS-geom-reacher",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "tags": [
+      "q", "proper", "test"
+    ],
+    "model_logging": "True"
+}

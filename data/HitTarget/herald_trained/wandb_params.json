@@ -1,0 +1,10 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "herald-new-ms{level_params_list[1].subtask_spec_params.max_n_actions}-{additional_kwargs.herald.interruption_type}-no{env_kwargs.num_obstacles}-vr{env_kwargs.view_range}-s{env_kwargs.speed}",
+    "group": "HitTarget-hits",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "tags": ["test"],
+    "save_code": "True"
+}

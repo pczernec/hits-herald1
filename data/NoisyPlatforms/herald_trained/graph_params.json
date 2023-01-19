@@ -1,0 +1,103 @@
+{
+    "algorithm": "HERALD",
+    "n_layers": 2,
+    "subtask_spec_factory": "PlatformsSubtaskSpecFactory",
+    "additional_kwargs": {
+          "node": {
+              "logging_length": 1000,
+              "logging_freq": 50000
+          },
+          "herald": {
+              "debug": false,
+              "goal_distance_threshold": 0.5,
+              "goal_distance_activate_steps": 50000,
+              "use_additional_state": false,
+              "timed_goal_subtask": "default",
+              "q_value_ratio_threshold": 0.5,
+              "goal_distance_relative": true,
+              "add_experience_to_parent_every_step": false,
+              "q_value_std_multiplyer": 1,
+              "exp_avg_alpha": 0.999,
+              "interruption_type": "dummy",
+              "__comment": "available interruption_types: relative_policy_threshold, q_function_naive, q_function_exponential",
+              "__comment_timed_goal": "available timed_goal_subtask: default==hits, herald, herald_additional_state, "
+          }
+      },
+    "level_params_list": [
+        {
+            "algo_kwargs": {
+                "flat_algo_name": "SAC",
+                "flat_algo_kwargs": {
+                    "alpha": 0.004189083521541997,
+                    "gamma": 0.99,
+                    "tau": 0.021421017364015173
+                },
+                "goal_sampling_strategy": "future",
+                "batch_size": 512,
+                "grad_steps_per_env_step": 0.5,
+                "n_hindsight_goals": 3,
+                "testing_fraction": 0.3,
+                "fully_random_fraction": 0.05,
+                "bootstrap_testing_transitions": true,
+                "learning_starts": 20000
+            },
+            "model_kwargs": {
+                "learning_rate": 0.0001940204674106782,
+                "hidden_layers": [
+                    32,
+                    32
+                ],
+                "squash_critics": false
+            },
+            "subtask_spec_params": {
+                "delta_t_max": 50,
+                "goal_achievement_threshold": 0.05,
+                "learn_goal_ach_thresholds": false,
+                "power_aux_reward": false,
+                "power_aux_reward_factor": 1.0
+            }
+        },
+        {
+            "algo_kwargs": {
+                "flat_algo_name": "VariableDiscountSAC",
+                "flat_algo_kwargs": {
+                    "alpha": 1.25,
+                    "gamma": 0.997,
+                    "tau": 0.035,
+                    "reward_normalization": false
+                },
+                "goal_sampling_strategy": "future",
+                "batch_size": 512,
+                "grad_steps_per_env_step": 0.5,
+                "n_hindsight_goals": 3,
+                "testing_fraction": 0.3,
+                "testing_penalty_normalization": 1,
+                "fully_random_fraction": 0.05,
+                "bootstrap_testing_transitions": true,
+                "learning_starts": 20000,
+                "include_interrupted_actions_to_budget": false
+            },
+            "model_kwargs": {
+                "learning_rate": 0.0001940204674106782,
+                "hidden_layers": [
+                    32,
+                    32
+                ],
+                "squash_critics": false,
+                "force_negative": true
+            },
+            "subtask_spec_params": {
+                "max_n_actions": 1000,
+                "reward_normalization_coefficient": 60,
+                "constant_failure_return": false,
+                "goal_achievement_threshold": 0.5,
+                "learn_goal_ach_thresholds": false,
+                "use_env_reward": true,
+                "use_env_reward_discounted": true,
+                "goal_tol_rew": 2.0,
+                "weight_delta_t_ach_aux": 0,
+                "discounting_hl_gamma": 0.997
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+program: scripts.run.train
+entity: piotrczernecki
+project: herald-hits
+method: grid
+parameters:
+  env:
+    value: Drawbridge
+  algo:
+    value: hits
+  seed:
+    values: [50012, 1, 4950,]
+command:
+- python
+- "-m"
+- ${program}
+- ${args}
+

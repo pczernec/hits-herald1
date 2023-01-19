@@ -1,0 +1,10 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "test",
+    "group": "seed-reset",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "tags": ["test"],
+    "save_code": "True"
+}

@@ -1,0 +1,13 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "HAC",
+    "group": "IJCAI-NoisyDrawbridge",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "tags": [
+      "hac", "noisy-drawbridge", "ijcai", "publish"
+    ],
+    "model_logging": "True"
+}

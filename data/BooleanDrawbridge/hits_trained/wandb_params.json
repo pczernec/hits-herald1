@@ -1,0 +1,13 @@
+{
+    "project": "herald-hits",
+    "entity": "piotrczernecki",
+    "name": "{algorithm}-{seed}",
+    "group": "IJCAI-BooleanDrawbridge",
+    "sync_tensorboard": "True",
+    "monitor_gym": "",
+    "save_code": "True",
+    "tags": [
+      "ijcai", "publish", "boolean_drawbridge"
+    ],
+    "model_logging": "True"
+}
